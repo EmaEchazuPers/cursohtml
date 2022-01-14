@@ -74,8 +74,22 @@
             <section>
                 <h4 id="contacto">¿Quéres que nos <br> contactemos con vos?</h4>
 
-
                 <p class="fondo"> Envianos tu consulta >></p>
+                <form action="codigo.php" method="post">
+                    <label>Nombre <span>*</span> <br>
+                        <input type="text" name="nombre" required>
+                    </label>
+                    <label>Email <span>*</span> <br>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label for="">Mensaje <span>*</span> <br>
+                        <textarea name="comentarios" cols="30" rows="10"></textarea>
+                    </label>
+                    <div>
+                        <input type="submit" value="Enviar consulta">
+                        <input type="reset" value="Borrar">
+                    </div>
+                </form>
             </section>
         </div>
     </main>
